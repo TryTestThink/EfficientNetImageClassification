@@ -7,7 +7,7 @@ import os
 
 from sklearn.metrics import classification_report
 
-dataset_path = os.listdir('C:\\Users\\A\\Desktop\\day\\dataset')
+dataset_path = os.listdir('C:\\Users\\ASUS\\Desktop\\day\\dataset')
 
 print (dataset_path)  #what kinds of classes are in this dataset
 
@@ -19,7 +19,7 @@ class_labels = []
 
 for item in dataset_path:
  # Get all the file names
- all_classes = os.listdir('C:\\Users\\A\\Desktop\\day\\dataset' + '/' +item)
+ all_classes = os.listdir('C:\\Users\\ASUS\\Desktop\\day\\dataset' + '/' +item)
  #print(all_classes)
 
  # Add them to the list
@@ -40,7 +40,7 @@ print(label_count)
 import cv2
 
 path = 'C:\\Users\\ASUS\\Desktop\\day\\dataset\\'
-dataset_path = os.listdir('C:\\Users\\A\\Desktop\\day\\dataset\\')
+dataset_path = os.listdir('C:\\Users\\ASUS\\Desktop\\day\\dataset\\')
 
 im_size = 224
 
@@ -137,14 +137,16 @@ def plot_hist(hist):
 plot_hist(hist)
 
 from sklearn.metrics import classification_report
-print(classification_report(labels, predictions,target_names=dataset_path))
+predIdxs = model.predict(train_x, verbose  = 1)
+predictions= np.argmax(predIdxs, axis=1)
+print(classification_report(labels,predictions,target_names=dataset_path))
 
 # preds = model.evaluate(test_x, test_y)
 # print ("Loss = " + str(preds[0]))
 # print ("Test Accuracy = " + str(preds[1]))
 #
 #
-#  EXAMPLE
+#
 # from sklearn.metrics import classification_report
 # target_names = ['evening', 'morning']
 # predIdxs = model.predict(train_x, verbose = 1)

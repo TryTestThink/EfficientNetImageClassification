@@ -1,3 +1,31 @@
+#READ MEE
+# Iwas following here for classification custom data evening morning.
+#https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/  I could not do the data upload and tpu part. 
+#I'm trying to test with gpu. (FIRST QUESTION)
+#tfds.load(dataset_name, data_dir="gs://example-bucket/datapath") how can i change this part for myself ?
+##SECOND QUESTION
+##https://github.com/AarohiSingla/Image-Classification-Using-EfficientNets/blob/main/2-efficientnetB0_Custom_dataset.ipynb
+#I have a question about this place
+#  I'm trying to add the reporting part to this code, but I couldn't.
+###
+#from sklearn.metrics import classification_report
+#predIdxs = model.predict(train_x, verbose  = 1)
+#predictions= np.argmax(predIdxs, axis=1)
+#print(classification_report(labels,predictions,target_names=dataset_path))
+#ERROR-------------------
+#Traceback (most recent call last):
+#File "C:\Users\A\PycharmProjects\pythonProject8\test.py", line 142, in <module>
+#print(classification_report(labels,predictions,target_names=dataset_path))
+#File "C:\Users\A\Anacondainstallb\envs\tfow\lib\site-packages\sklearn\metrics\_classification.py", line 2310, in classification_report
+#y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+#File "C:\Users\A\Anacondainstallb\envs\tfow\lib\site-packages\sklearn\metrics\_classification.py", line 86, in _check_targets
+#check_consistent_length(y_true, y_pred)
+#File "C:\Users\A\Anacondainstallb\envs\tfow\lib\site-packages\sklearn\utils\validation.py", line 397, in check_consistent_length
+#raise ValueError(
+#ValueError: Found input variables with inconsistent numbers of samples: [106, 100]
+
+####
+
 import numpy as np
 import pandas as pd
 import tensorflow as tf

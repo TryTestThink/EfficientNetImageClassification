@@ -67,7 +67,7 @@ print(label_count)
 
 import cv2
 
-path = 'C:\\Users\\ASUS\\Desktop\\day\\dataset\\'
+path = 'C:\\Users\\A\\Desktop\\day\\dataset\\'
 dataset_path = os.listdir('C:\\Users\\A\\Desktop\\day\\dataset\\')
 
 im_size = 224

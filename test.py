@@ -1,4 +1,4 @@
-#READ MEE
+#READ MEE  custom data we transfer link  https://we.tl/t-0YTzPZw2RI
 # Iwas following here for classification custom data evening morning.
 #https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/  I could not do the data upload and tpu part. 
 #I'm trying to test with gpu. (FIRST QUESTION)
